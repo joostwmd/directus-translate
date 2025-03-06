@@ -35,5 +35,8 @@
 		"@types/node": "^22.13.9",
 		"typescript": "^5.8.2",
 		"vue": "^3.5.13"
+	},
+	"dependencies": {
+		"@anthropic-ai/sdk": "^0.39.0"
 	}
 }
