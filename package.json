@@ -1,42 +1,55 @@
 {
-	"name": "directus-translate",
-	"description": "Please enter a description for your extension",
-	"icon": "extension",
-	"version": "1.0.0",
-	"keywords": [
-		"directus",
-		"directus-extension",
-		"directus-extension-operation"
-	],
-	"type": "module",
-	"files": [
-		"dist"
-	],
-	"directus:extension": {
-		"type": "operation",
-		"path": {
-			"app": "dist/app.js",
-			"api": "dist/api.js"
-		},
-		"source": {
-			"app": "src/app.ts",
-			"api": "src/api.ts"
-		},
-		"host": "^10.10.0"
-	},
-	"scripts": {
-		"build": "directus-extension build",
-		"dev": "directus-extension build -w --no-minify",
-		"link": "directus-extension link",
-		"validate": "directus-extension validate"
-	},
-	"devDependencies": {
-		"@directus/extensions-sdk": "13.0.3",
-		"@types/node": "^22.13.9",
-		"typescript": "^5.8.2",
-		"vue": "^3.5.13"
-	},
-	"dependencies": {
-		"@anthropic-ai/sdk": "^0.39.0"
-	}
+  "name": "directus-extension-operation-translate",
+  "description": "A Directus extension that automatically translates content using Claude AI",
+  "icon": "translate",
+  "version": "1.0.1",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-operation",
+    "claude",
+    "translation",
+    "ai"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "directus:extension": {
+    "type": "operation",
+    "path": {
+      "app": "dist/app.js",
+      "api": "dist/api.js"
+    },
+    "source": {
+      "app": "src/app.ts",
+      "api": "src/api.ts"
+    },
+    "host": "^10.10.0"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link",
+    "validate": "directus-extension validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostwmd/directus-translate.git"
+  },
+  "author": "joostwmd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joostwmd/directus-translate/issues"
+  },
+  "homepage": "https://github.com/joostwmd/directus-translate#readme",
+  "devDependencies": {
+    "@directus/extensions-sdk": "^13.0.3",
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  }
 }

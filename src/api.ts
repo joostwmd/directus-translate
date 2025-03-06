@@ -42,9 +42,7 @@ export default defineOperationApi<Options>({
           messages: [
             {
               role: "user",
-              content: `Translate the following content into ${language}. Only return the translated text without any explanations or additional comments.
-
-Original text: ${text}`,
+              content: `Translate the following content into ${language}. Only return the translated text without any explanations or additional comments. Original text: ${text}`,
             },
           ],
         });
